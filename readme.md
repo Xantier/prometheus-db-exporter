@@ -66,3 +66,9 @@ Add maven dependency for your DB vendor to pom.xml. Change DB drivers in applica
 
 4. Fill mentioned folders with application.properties & query files.
 5. Run with `java -jar prometheus-db-exporter-1.0.0.jar`
+
+
+#Licence#
+
+
+[The MIT License](http://opensource.org/licenses/mit-license.php)
