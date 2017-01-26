@@ -1,0 +1,15 @@
+name: amount_of_users
+description: Gauge to how many users are in the database
+type: gauge
+labels:
+  - 'registration_type'
+  - 'age_bracket'
+
+query: |
+  SELECT
+  source as registration_type,
+  age_bracket,
+  count(*) as amount
+  FROM USER
+  GROUP BY source, age_bracket
+  ORDER BY source, age_bracket
